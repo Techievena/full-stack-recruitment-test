@@ -21,12 +21,12 @@ Server API Task
 Validation
 ----------
 
-Beside basic validation for the uploaded file.
-Following are the Validation for each field:
-__Name__ -> can only contain alphabets
-__Department__ -> alphanumeric with `-_*` as special characters
-__Designation__ -> Developer, Senior Developer, Manager, Team Lead, VP, CEO
-__Salary__ -> can only contain Numeric value
+Beside basic validation for the uploaded file.  
+Following are the Validation for each field:  
+__Name__ -> can only contain alphabets  
+__Department__ -> alphanumeric with `-_*` as special characters  
+__Designation__ -> Developer, Senior Developer, Manager, Team Lead, VP, CEO  
+__Salary__ -> can only contain Numeric value  
 __Joining Date__ -> yyyy-MM-dd format
  
  
