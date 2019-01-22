@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.rakuten.fullstackrecruitmenttest.FullstackrecruitmenttestApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 30.855 s <<< FAILURE! - in com.rakuten.fullstackrecruitmenttest.FullstackrecruitmenttestApplicationTests
+contextLoads(com.rakuten.fullstackrecruitmenttest.FullstackrecruitmenttestApplicationTests)  Time elapsed: 0.051 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.cfg.beanvalidation.IntegrationException: Error activating Bean Validation integration
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.cfg.beanvalidation.IntegrationException: Error activating Bean Validation integration
+Caused by: org.hibernate.cfg.beanvalidation.IntegrationException: Error activating Bean Validation integration
+Caused by: java.lang.NoClassDefFoundError: javax/validation/valueextraction/ValueExtractorDeclarationException
+Caused by: java.lang.ClassNotFoundException: javax.validation.valueextraction.ValueExtractorDeclarationException
+
