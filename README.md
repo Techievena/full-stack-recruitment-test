@@ -1,32 +1,33 @@
-# full-stack-recruitment-test
-Basic project structure for full stack web application
+# Rakuten
+## full-stack-recruitment-test
 
-Client implementation:
+UI Task
+-------
 
-We'd like you to use React. On top of that, use whatever front-end libraries you feel comfortable with.
+1. Create an UI which allow to upload csv file containing employee information
+	1. Employee csv contains the following columns: name, department, designation, salary, joining date
+2. Show the uploaded Employee information in a table.
+3. Table should have pagination capabilities.
+4. Any updates in the employee information should be reflected when refreshing the table or page.
+5. Provide link to download the file with error records
 
-We've set you up with a build on create-react-app. To run the client:
+Server API Task
+----------------
 
-npm install
+1. Expose service to consume uploaded file
+2. Validation
+3. Service to update the employee information
 
-npm start - start the client development build at http://localhost:3000
+Validation
+----------
 
-Server implementation:
-
-We'd like you to use Spring Boot for server implementation.
-
-We've set you up with a basic spring boot application structure. 
-
-To run the server:
-
-mvn clean install
-
-mvn spring-boot:run
-
-Submission Guidelines:
-
-Please submit your solution by sending a zip file to your Rakuten contact.
-
-The zip file should be named {yourname}.zip, and should itself contain the full-stack-recruitment-test project folder with your submission.
-
-The zip file should not include the node_modules and target folder.
+Beside basic validation for the uploaded file.
+Following are the Validation for each field:
+__Name__ -> can only contain alphabets
+__Department__ -> alphanumeric with `-_*` as special characters
+__Designation__ -> Developer, Senior Developer, Manager, Team Lead, VP, CEO
+__Salary__ -> can only contain Numeric value
+__Joining Date__ -> yyyy-MM-dd format
+ 
+ 
+The basic project structure is available from the below GitHub repo. https://github.com/rakutenAsia/full-stack-recruitment-test
